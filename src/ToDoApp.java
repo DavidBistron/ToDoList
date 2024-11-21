@@ -51,9 +51,11 @@ public class ToDoApp {
         inputPanel.add(deleteButton);
 
         // Button to mark ToDos as done
+        /*
         JButton doneButton = new JButton("Mark ToDo as done");
         deleteButton.addActionListener(e -> doneTodo());
         inputPanel.add(doneButton);
+        */
 
         // Panel for ToDo-List
         JPanel listPanel = new JPanel();
@@ -104,6 +106,7 @@ public class ToDoApp {
         }
     }
 
+    /*
     private void doneTodo() {
         ToDo selectedToDo = todoList.getSelectedValue();
         if (selectedToDo != null) {
@@ -113,6 +116,7 @@ public class ToDoApp {
             JOptionPane.showMessageDialog(frame, "Please choose a ToDo from List!", "Error", JOptionPane.ERROR_MESSAGE);
         }
     }
+    */
 
     // Display ToDos in a List - below the input fields
     private static class ToDoListCellRenderer implements ListCellRenderer<ToDo> {
@@ -127,12 +131,16 @@ public class ToDoApp {
             }
 
             // Label for ToDos
-            JLabel label = new JLabel(value.getName());
+            JLabel lblToDoName = new JLabel(value.getName());
+            JLabel lblToDoDesc = new JLabel(value.getDescription());
+            /*
             if (value.isDone()) {
                 label.setText(value.getName() + "(isDone");
                 panel.repaint();
             }
-            panel.add(label);
+            */
+            panel.add(lblToDoName);
+            panel.add(lblToDoDesc);
             return panel;
         }
     }
