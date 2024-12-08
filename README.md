@@ -1,6 +1,6 @@
 ### ToDo List
 
-ToDo List developed with <mark><b>JAVA</b></mark>! Add ToDos and a description, delete ToDos that are done. Perfect basic programm for further extensions. 
+ToDo List developed with <mark><b>Java</b></mark>! Add ToDos and a description, delete ToDos that are done. Perfect basic program for further extensions. 
 
 <hr>
 
@@ -8,3 +8,7 @@ ToDo List developed with <mark><b>JAVA</b></mark>! Add ToDos and a description, 
 *Start Screen*<br>
 
 <hr>
+
+# Author
+
+David Bistron
